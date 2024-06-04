@@ -22,14 +22,11 @@
   --shadow-color: rgba(0, 0, 0, 0.7);
 }
 
-html {
-  font-size: 62.5%;
-  overflow-x: hidden;
-}
-
 body {
   background: var(--bg-color);
   color: var(--text-color);
+  font-size: 62.5%;
+  overflow-x: hidden;
 }
 
 .header {
@@ -184,28 +181,6 @@ section {
   justify-content: center;
   align-items: center;
   animation: professionRotate 13s ease-out infinite;
-}
-
-@keyframes professionRotate {
-  0%,
-  20% {
-    transform: rotate(0deg);
-  }
-  25%,
-  45% {
-    transform: rotate(-90deg);
-  }
-  50%,
-  70% {
-    transform: rotate(-180deg);
-  }
-  75%,
-  95% {
-    transform: rotate(-270deg);
-  }
-  100% {
-    transform: rotate(-360deg);
-  }
 }
 
 .home .profession-box .profession {
@@ -724,17 +699,18 @@ span {
   .home {
     padding: 0 3% 30rem;
   }
+
   .home .profession-box .profession:nth-child(1) {
-    transform: rotate(-90deg) translate(-83px, -220px);
+    transform: rotate(-90deg) translate(-50%, -465%);
   }
   .home .profession-box .profession:nth-child(2) {
-    transform: rotate(0deg) translate(5px, -300px);
+    transform: rotate(0deg) translate(-2%, -440%);
   }
   .home .profession-box .profession:nth-child(3) {
-    transform: rotate(90deg) translate(-95px, -400px);
+    transform: rotate(90deg) translate(-50%, -830%);
   }
   .home .profession-box .profession:nth-child(4) {
-    transform: rotate(180deg) translate(-190px, -290px);
+    transform: rotate(180deg) translate(-100%, -430%);
   }
   .home .profession-box .circle {
     width: 600px;
@@ -742,6 +718,13 @@ span {
   }
   .contact form .input-box input {
     width: 100%;
+  }
+  .footer {
+    flex-direction: column-reverse;
+  }
+  .footer p {
+    text-align: center;
+    margin-top: 2rem;
   }
 }
 @media (max-width: 365px) {
@@ -759,5 +742,26 @@ span {
   .footer p {
     text-align: center;
     margin-top: 2rem;
+  }
+}
+@keyframes professionRotate {
+  0%,
+  20% {
+    transform: rotate(0deg);
+  }
+  25%,
+  45% {
+    transform: rotate(-90deg);
+  }
+  50%,
+  70% {
+    transform: rotate(-180deg);
+  }
+  75%,
+  95% {
+    transform: rotate(-270deg);
+  }
+  100% {
+    transform: rotate(-360deg);
   }
 }
