@@ -21,11 +21,12 @@
   --main-color: #2a6a13;
   --shadow-color: rgba(0, 0, 0, 0.7);
 }
-
+html {
+  font-size: 62.5%;
+}
 body {
   background: var(--bg-color);
   color: var(--text-color);
-  font-size: 62.5%;
   overflow-x: hidden;
 }
 
